@@ -1,6 +1,11 @@
-<blockquote><p>Level one</p>
-<blockquote><p>Level two</p>
-<blockquote><p>Level three</p>
-</blockquote>
-</blockquote>
-</blockquote>
+---
+layout: default
+title: Algi Quest
+---
+	<h1>{{ page.title }}</h1>
+	<ul class="posts">
+
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
