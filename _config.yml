@@ -1,2 +1,4 @@
 name: peace
 markdown: kramdown
+
+theme: jekyll-theme-cayman
